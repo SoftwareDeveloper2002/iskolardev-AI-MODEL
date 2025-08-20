@@ -39,7 +39,7 @@ client = None
 def get_openai_client():
     global client
     if client is None:
-        client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
+        client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     return client
 
 # ------------------ Load Features ------------------
