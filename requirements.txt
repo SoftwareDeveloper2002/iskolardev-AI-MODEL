@@ -1,0 +1,8 @@
+flask
+flask-cors
+pandas
+scikit-learn
+joblib
+python-docx
+PyPDF2
+openai
