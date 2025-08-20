@@ -190,7 +190,7 @@ def home():
     return jsonify({
         "message": "Welcome to the Feature Analyzer API",
         "endpoints": {
-            "/": "gg nothing's here"
+            "/": "gg nothing "
         }
     })
 @app.route("/analyze", methods=["POST"])
@@ -230,5 +230,4 @@ def analyze_file():
         "total_price": total_price
     })
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True, port=7500)
